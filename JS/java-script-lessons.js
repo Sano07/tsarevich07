@@ -76,75 +76,102 @@
 //     };
 // };
 
- задание №1
-// for (let i = 5; i < 11; i++) {
-//          console.log(i);
+ФУНКЦИИ 
+
+// cтандартная функция
+
+// function showFirstMassage() {
+//     console.log('Hello');
 // }
 
- задание №2
-// for (let i = 20; i > 10; i--) {
-//          if (i === 13) {
-//              break;
-//              //continue  -- позволяет пропустить итерацию цикла
+// showFirstMassage();
+
+// аргумент ФУНКЦИИ
+
+// function showFirstMassage(text) {
+//     console.log(text);
+// }
+
+// showFirstMassage('Hello');
+
+RETURN
+
+// function calc(a, b) {
+//     return (a + b);
+//     console.log('121');  ---не будет выполняться , стоит после return
+// }
+
+// calc(4 , 3);
+
+// function ret() {
+//     let num = 50;
+//     return num;
+// }
+
+// const anotherNum = ret();
+// console.log(anotherNum);
+
+---
+
+функция вызывающая функцию с помощью return
+// const usdCarr = 20,
+//       eurCarr = 26,
+//       discount = 0.9;
+
+// function convret(amount, curr) {
+//     return(curr * amount);
+// }
+
+// function promotion(result) {
+//     console.log(result * discount);
+// }
+
+// promotion(convret(500, usdCarr));
+
+завершение функции с помощью return
+// function test() {
+//     for (let u = 0; u < 6; u++) {
+//         console.log(u);
+//         if (u === 3) return
 //     }
-//     console.log(i);
 // }
 
- задание№3
+// test();
 
-// for (let i = 2; i < 11; i++) {
-//     if (i % 2 !==0) {
-//         continue
-//     };
-//     console.log(i);
-// }
 
- задание №4
 
-// for (let i = 2; i <= 16; i++) {
-//     if (i % 2 === 0) {
-//         continue;
-//     } else {
-//         console.log(i);
-//     }
-// }
 
-// let abc1 = 2;
+FUNCTION EXPRESSION 
 
-// while (abc1 < 16) {
-//     abc1++;
-//     if (abc1 % 2 === 0) {
-//         continue;
-//     } else {
-//         console.log(abc1);
-//     }
-// }
-задание №5
-// let arr = [];
+// logger();  -- выполняться не будет, в данному случае функция еще не объявлена, использовать только после
 
-// for (let i = 5; i < 11; i++) {
-//     arr.push(i);
+// const logger = function() {
+//     console.log('Hello')
 // };
-// console.log(arr);
 
-задание №6
-// let newArray = [...arr];  -- копирование массива
-// console.log(newArray);
+// logger();
 
-задание №7 
-// Измените данный массив так, чтобы все числа были увеличены в 2 раза, а если попадается строка строка - то к ней было добавлено " - done".
-// Для определения типа данных используйте typeof();
-// Должно получиться: [ 10, 20, 'Shopping - done', 40, 'Homework - done' ]
+СТРЕЛОЧНЫЕ ФУНКЦИИ
+
+// const calc = (a, b) => { 
+//     console.log('123');
+//     return a + b
+// }
+//  console.log(calc(3, 3));
+
+// const calc1 = (a, b) => a + b;         --- запись в случае короткой функици
+// console.log(calc1(3, 3));
+
+УНИВЕРСАЛЬНЫЕ ФУНКЦИИ
+
+// const usdCarr = 20,
+//       eurCarr = 26;
+
+// function convret(amount, curr) {
+//     console.log(curr * amount);
+// }
+
+// convret(500, usdCarr);
+// convret(500, eurCarr);
 
 
-// const data = [5, 10, 'Shopping', 20, 'Homework'];
-
-// for (let i = 0; i < data.length; i++) {
-//         if (typeof(data[i]) === 'number') {
-//             data[i] = data[i] * 2;
-//         } else if (typeof(data[i]) === 'string') {
-//             data[i] = `${data[i]} - done`;
-//         }
-//     }
-
-// console.log(data);
