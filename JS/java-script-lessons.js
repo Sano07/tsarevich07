@@ -113,7 +113,7 @@ RETURN
 
 ---
 
-функция вызывающая функцию с помощью return
+функция вызывающая функцию с помощью return 
 // const usdCarr = 20,
 //       eurCarr = 26,
 //       discount = 0.9;
@@ -174,4 +174,51 @@ FUNCTION EXPRESSION
 // convret(500, usdCarr);
 // convret(500, eurCarr);
 
+МЕТОДЫ СТРОК и ЧИСЛЕЛ
+
+length
+
+// let str = 'test';
+// let arr = [1, 2, 4];
+// console.log(arr.length);
+
+toUpperCase + toLowerCase
+
+// let str = 'test';
+// console.log(str.toUpperCase());
+
+indexOf
+
+// let fruit = 'Some fruit';
+// console.log(fruit.indexOf("fruit"));
+
+slice 
+
+// const logg = 'Hello world';
+// console.log(logg.slice(6, 11));
+
+substring 
+
+//console.log(logg.substring(6, 11));
+
+substr  - передаем начало откуда нужно вырезать, и сколько символов
+
+// console.log(logg.substr(6, 11));
+
+---
+
+Math.round(); - округление чисел
+
+// const num = 12.2;
+// console.log(Math.round(num));
+
+parseInt() - переводит в number и округляет
+
+// const test = "12.2";
+// console.log(parseInt(test));
+
+parseFloat() - переводит в number не округляет
+
+// const test = "12.2";
+// console.log(parseFloat(test));
 
