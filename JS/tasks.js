@@ -215,22 +215,50 @@
 // Если вместо аргумента приходит не число, дробное или отрицательное число - функция возвращает строку "Ошибка, проверьте данные"
 // Внимание! Давайте пока ограничимся максимум 600ю минутами (10 часов).
 
-function convertTime (minutes) {
-    
-    let hour,
-        min,
-        lastHour, 
-        result;
+// function convertTime(minutes) {
+//     function getCorrectForm(number, forms) {
+//         let lastDigit = number % 10;
+//         let lastTwoDigits = number % 100;
 
-    if (minutes === '' || isNaN(minutes) || minutes < 0 || minutes == null || !Number.isInteger(minutes)) {
-        return "Ошибка, проверьте данные";
-    } else {
-        hour = Math.ceil(minutes / 60);         
-        min = minutes % 60
-    }
+//         if (lastDigit === 1 && lastTwoDigits !== 11) {
+//             return forms[0];
+//         } else if ((lastDigit >= 2 && lastDigit <= 4) && !(lastTwoDigits >= 12 && lastTwoDigits <= 14)) {
+//             return forms[1];
+//         } else {
+//             return forms[2];
+//         }
+//     }
 
-    lastHour = minutes % 10;
+//     if (minutes === '' || isNaN(minutes) || minutes < 0 || minutes == null || !Number.isInteger(minutes)) {
+//         return "Ошибка, проверьте данные";
+//     } else {
+//         let hour = Math.floor(minutes / 60);
+//         let minyt = minutes % 60;
 
-    (hour === 1) ? result = `Это ${hour} час и ${lastHour} минута`
+//         let hourForm = getCorrectForm(hour, ["час", "часа", "часов"]);
+//         let minuteForm = getCorrectForm(minyt, ["минута", "минуты", "минут"]);
 
-}
+//         let resultHour = hour > 0 ? `Это ${hour} ${hourForm} ` : "";
+//         let resultMin = minyt > 0 ? `${minyt} ${minuteForm}` : "";
+
+//         return resultHour + resultMin || "0 минут";
+//     }
+// }
+
+// console.log(convertTime(191));
+
+задание № 15
+// Напишите функцию, которая принимает в себя 4 числа и возвращает самое большее из них. 
+// Если один из аргументов не является числом или их меньше 4 - возвращается 0. Дробные числа разрешены.
+
+// function findMax(a, b, c, d) {
+//     let args = [a, b, c, d];
+
+//     if (!args.every(el => typeof el === 'number') || args.length <= 3) {
+//         return "0";
+//     }
+
+//     let result = Math.max(...args);
+//     return result;
+// }
+// console.log(findMax(34, 44, 12));

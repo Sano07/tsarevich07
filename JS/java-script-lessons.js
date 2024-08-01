@@ -222,3 +222,104 @@ parseFloat() - переводит в number не округляет
 // const test = "12.2";
 // console.log(parseFloat(test));
 
+МЕТОД TRIM ()
+
+// обрезание пробелов с начала и с конца строки
+
+// str.trim();
+
+CALLBACK функции - функция которая должна выполниться после завершения предыдущей функции
+
+// function learnJS(lang , callback) {
+//     console.log(`Я учу: ${lang}`);
+//     callback();
+// }
+
+// function done() {
+//     console.log('Я прошел урок');
+// }
+
+// в качестве callback в функцию передается название, без вызова
+// learnJS('JS', done);
+
+ОБЬЕКТЫ
+
+// const options = {
+//     name: 'test',
+//     width: 1024,
+//     height: 1024,
+//     colors: {
+//         border: 'black',
+//         bg: 'red'
+//     }
+// };
+
+ПЕРЕБОР ОБЬЕКТА
+
+ МЕТОД for in с примером перебора вложеного обьекта с счетчиком
+
+// let counter = 0;
+
+// for (let key in options) {
+//     if (typeof(options[key]) === 'object') {
+//         for (let i in options[key]) {
+//             console.log(`Свойство ${i} имеет значение ${options[key][i]}`);        
+//             counter++;
+//         }
+//     } else {
+//     console.log(`Свойство ${key} имеет значение ${options[key]}`);
+//     counter++;
+//     }
+// }
+// console.log(counter);
+
+Object.keys - метод перевода ключей масива в массив + проверка длинны через length
+
+// const options = {
+//     name: 'test',
+//     width: 1024,
+//     height: 1024,
+//     colors: {
+//         border: 'black',
+//         bg: 'red'
+//     }
+// };
+
+// console.log(Object.keys(options).length);
+
+РУЧНЫЕ МЕТОДЫ ОБЬЕКТОВ  
+
+// const options = {
+//         name: 'test',
+//         width: 1024,
+//         height: 1024,
+//         colors: {
+//             border: 'black',
+//             bg: 'red'
+//         },
+//     maleTest: function() {
+//         console.log('Test');
+//     }
+// };
+
+// options.maleTest();
+
+ДЕСТРУКТУРИЗАЦИЯ ОБЬЕКТОВ
+
+// const options = {
+//         name: 'test',
+//         width: 1024,
+//         height: 1024,
+//         colors: {
+//             border: 'black',
+//             bg: 'red'
+//         },
+//     maleTest: function() {
+//         console.log('Test');
+//     }
+// };
+
+// const {border, bg} = options.colors;
+// console.log(border);
+
+
